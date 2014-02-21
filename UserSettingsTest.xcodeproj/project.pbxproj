@@ -24,6 +24,8 @@
 		899B59BC18B53BC000F7E44D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899B599B18B53BC000F7E44D /* CoreData.framework */; };
 		899B59C418B53BC000F7E44D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899B59C218B53BC000F7E44D /* InfoPlist.strings */; };
 		899B59C718B53BC000F7E44D /* UserSettingsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899B59C618B53BC000F7E44D /* UserSettingsTestTests.m */; };
+		899B59D118B53D0C00F7E44D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899B59D018B53D0C00F7E44D /* Storyboard.storyboard */; };
+		89D9354018B6F39800BF3136 /* HEALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9353F18B6F39800BF3136 /* HEALViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		899B59C318B53BC000F7E44D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		899B59C518B53BC000F7E44D /* UserSettingsTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingsTestTests.h; sourceTree = "<group>"; };
 		899B59C618B53BC000F7E44D /* UserSettingsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTestTests.m; sourceTree = "<group>"; };
+		899B59D018B53D0C00F7E44D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		89D9353E18B6F39800BF3136 /* HEALViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEALViewController.h; sourceTree = "<group>"; };
+		89D9353F18B6F39800BF3136 /* HEALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEALViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 		899B598918B53BBF00F7E44D = {
 			isa = PBXGroup;
 			children = (
+				899B59D018B53D0C00F7E44D /* Storyboard.storyboard */,
+				89D9353E18B6F39800BF3136 /* HEALViewController.h */,
+				89D9353F18B6F39800BF3136 /* HEALViewController.m */,
 				899B599D18B53BC000F7E44D /* UserSettingsTest */,
 				899B59BF18B53BC000F7E44D /* UserSettingsTestTests */,
 				899B599418B53BC000F7E44D /* Frameworks */,
@@ -237,6 +245,7 @@
 				899B59AA18B53BC000F7E44D /* Default.png in Resources */,
 				899B59AC18B53BC000F7E44D /* Default@2x.png in Resources */,
 				899B59AE18B53BC000F7E44D /* Default-568h@2x.png in Resources */,
+				899B59D118B53D0C00F7E44D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +283,7 @@
 				899B59A418B53BC000F7E44D /* main.m in Sources */,
 				899B59A818B53BC000F7E44D /* HEALAppDelegate.m in Sources */,
 				899B59B118B53BC000F7E44D /* UserSettingsTest.xcdatamodeld in Sources */,
+				89D9354018B6F39800BF3136 /* HEALViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +456,7 @@
 				899B59CC18B53BC000F7E44D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		899B59CD18B53BC000F7E44D /* Build configuration list for PBXNativeTarget "UserSettingsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +465,7 @@
 				899B59CF18B53BC000F7E44D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

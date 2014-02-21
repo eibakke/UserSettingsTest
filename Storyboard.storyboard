@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Lim-Sv-IdE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vaY-4E-NUg">
+            <objects>
+                <viewController id="Lim-Sv-IdE" customClass="HEALViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ksk-of-brm">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in lbs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0G-0T-b2d">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="jJ9-vE-72i"/>
+                                    <constraint firstAttribute="height" constant="30" id="uto-FE-ZcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42P-h4-W97">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8Pp-NT-QJD"/>
+                                    <constraint firstAttribute="height" constant="21" id="yL8-TM-UAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj2-04-MKq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="Y4Q-cS-u7w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Update Personal Data">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePersonalDataButton:" destination="Lim-Sv-IdE" eventType="touchUpInside" id="3Ra-fU-RQy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter M or F" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-lL-M72">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="KzD-JK-wk3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-Ud-d9D">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="42P-h4-W97" firstAttribute="leading" secondItem="ksk-of-brm" secondAttribute="leading" constant="31" id="0Vy-dX-KPH"/>
+                            <constraint firstItem="wvA-Ud-d9D" firstAttribute="leading" secondItem="42P-h4-W97" secondAttribute="leading" type="default" id="1qT-Q6-3ux"/>
+                            <constraint firstItem="wvA-Ud-d9D" firstAttribute="baseline" secondItem="Zur-lL-M72" secondAttribute="baseline" type="default" id="5nd-rf-2ar"/>
+                            <constraint firstItem="42P-h4-W97" firstAttribute="top" secondItem="ksk-of-brm" secondAttribute="top" constant="132" id="Bfu-3d-PJm"/>
+                            <constraint firstAttribute="bottom" secondItem="gj2-04-MKq" secondAttribute="bottom" constant="134" id="CsD-eM-hgD"/>
+                            <constraint firstItem="wvA-Ud-d9D" firstAttribute="leading" secondItem="gj2-04-MKq" secondAttribute="leading" type="default" id="Dbr-L3-bBg"/>
+                            <constraint firstItem="s0G-0T-b2d" firstAttribute="leading" secondItem="ksk-of-brm" secondAttribute="leading" constant="143" id="GDm-Rz-qgr"/>
+                            <constraint firstItem="Zur-lL-M72" firstAttribute="centerY" secondItem="ksk-of-brm" secondAttribute="centerY" type="default" id="HHu-3g-j0h"/>
+                            <constraint firstItem="Zur-lL-M72" firstAttribute="centerX" secondItem="s0G-0T-b2d" secondAttribute="centerX" type="default" id="S7S-qh-7eZ"/>
+                            <constraint firstItem="42P-h4-W97" firstAttribute="baseline" secondItem="s0G-0T-b2d" secondAttribute="baseline" type="default" id="TXH-39-Nya"/>
+                            <constraint firstItem="42P-h4-W97" firstAttribute="top" secondItem="s0G-0T-b2d" secondAttribute="top" type="default" id="lUO-cP-ZBs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sexTextField" destination="Zur-lL-M72" id="TAC-WV-bRU"/>
+                        <outlet property="weightTextField" destination="s0G-0T-b2d" id="EfJ-L7-dZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x29-Zx-zX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="32"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="HEALViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HEALViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="updatePersonalDataButton:"/>
+                <relationship kind="outlet" name="sexTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="weightTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
